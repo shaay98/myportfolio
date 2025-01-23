@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const contactList = [
   "Email richardson123@yahoo.com",
@@ -6,7 +6,7 @@ const contactList = [
   "Address 123 Apple St.",
   "City Atlanta",
   "State Georgia",
-];
+]
 
 const ul = document.getElementById("contactList");
 ul.innerHTML = "";
@@ -14,7 +14,7 @@ ul.innerHTML = "";
 for (let i = 0; i < contactList.length; i++) {
   const li = document.createElement("li");
   li.textContent = contactList[i];
-  ul.innerHTML(li);
+  ul.appendChild(li);
 }
 
 const btnTwo = document.getElementById("done-btn");
