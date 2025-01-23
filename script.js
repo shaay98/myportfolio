@@ -12,11 +12,11 @@ const ul = document.getElementById("contactList");
 ul.innerHTML = "";
 
 for (let i = 0; i < contactList.length; i++) {
-  const ul = document.getElementById("contactList");
-  ul.innerHTML += "<li>New List Item</li>";
+  const li = document.createElement("li");
   li.textContent = contactList[i];
   ul.innerHTML(li);
 }
+
 
 const buttonOne = document.getElementById("my-btn");
 buttonOne.addEventListener("click", function () {
